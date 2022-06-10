@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PDC03_PRACTICALPROJECT.View.AddAnimal">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+                <Image Source="https://i.ibb.co/JtTV0hD/addpage.png" 
+                    Aspect="Fill"
+                    HorizontalOptions="CenterAndExpand"
+                    VerticalOptions="Center"
+                    HeightRequest="{OnPlatform  iOS=300, Android=250}"/>
+                <StackLayout Margin="10" VerticalOptions="StartAndExpand" HorizontalOptions="FillAndExpand">
+                    <Entry x:Name="txtAnimalCode"  Placeholder="Enter Animal Code"/>
+                    <Entry x:Name="txtIntialIdentification" Placeholder="Enter Initial Identification"/>
+                    <Entry x:Name="txtKingdom" Placeholder="Enter Kingdom"/>
+                    <Entry x:Name="txtClass" Placeholder="Enter Class"/>
+                    <Entry x:Name="txtFamily" Placeholder="Enter Family"/>
+                    <Entry x:Name="txtGenus" Placeholder="Enter Genus"/>
+                    <Entry x:Name="txtScientificName" Placeholder="Enter Scientific Name"/>
+                    <Entry x:Name="txtTaxonomy" Placeholder="Enter Taxonomy"/>
+                    <Entry x:Name="txtCharacteristics" Placeholder="Enter Characteristics"/>
+                    <Entry x:Name="txtHabitat" Placeholder="Enter Habitat"/>
+                    <Entry x:Name="txtThreats" Placeholder="Enter Threats"/>
+                    <Entry x:Name="txtConservation" Placeholder="Enter Conservation"/>
+                    <Button Text="Save" Clicked="btnSaveUpdate_Clicked"/>
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
+
+    </ContentPage.Content>
+</ContentPage>
